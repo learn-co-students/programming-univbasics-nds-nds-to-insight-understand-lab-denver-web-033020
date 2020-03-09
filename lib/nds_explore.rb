@@ -14,14 +14,9 @@ end
 pretty_print_nds(directors_database)
 
 def print_first_directors_movie_titles
-# binding.pry
-row_index = 0
-name = directors_database = [0]
-name_movies = directors_database[0][:movies]
-  while row_index < name_movies.length do
-    titles = name_movies[row_index][:title]
-    print titles
-    row_index += 1
-    # binding.pry
+  index = 0
+  while index < directors_database[0][:movies].length do
+  puts directors_database[0][:movies][index][:title]
+  index += 1
   end
 end
